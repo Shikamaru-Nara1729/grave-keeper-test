@@ -3,6 +3,9 @@ import random
 import asyncio
 import re
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 #client = discord.Client()
 
