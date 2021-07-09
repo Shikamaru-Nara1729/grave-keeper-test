@@ -6,9 +6,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-
 #client = discord.Client()
-
 class MyClient(discord.Client):
     async def on_ready(self):
         print('We have logged in as {0.user}'.format(client))
@@ -23,7 +21,7 @@ class MyClient(discord.Client):
         if message.author == client.user:
             return
 #-----------------------------------------------------
-        elif message.content.startswith('$hello'):
+        elif message.content.startswith('Helloow'):
             await message.channel.send('* rises from the grave \U0001FAA6 * Sup?')
 #-----------------------------------------------------
         elif message.content.startswith('$guess game'):
