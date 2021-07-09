@@ -12,8 +12,8 @@ load_dotenv()
 class MyClient(discord.Client):
     async def on_ready(self):
         print('We have logged in as {0.user}'.format(client))
-        print(self.user.name)
-        print(self.user.id)
+        #print(self.user.name)
+        #print(self.user.id)
         print('------')
 
     async def on_message(self,message):
